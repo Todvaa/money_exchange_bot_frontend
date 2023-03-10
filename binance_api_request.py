@@ -61,7 +61,7 @@ def exchange_options_calculation(result_rupee, result_rate, commission):
     sold_exchange_amount_2 = result_rupee_2 / result_rate
 
     return [
-        [result_rupee_1, result_rupee_2],
+        [int(result_rupee_1), int(result_rupee_2)],
         [round(sold_exchange_amount_1, 2), round(sold_exchange_amount_2, 2)],
         round(result_rate, 2), round(commission, 2)
     ]
